@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="description" content="home of pxi design laboratory" />
+  <meta name="author" content="pxi.gmbh" />
+  <title>pxi.design</title>
+  <meta name="title" content="pxi.design" />
+  <meta name="description" content="home of pxi design laboratory"/>
+  <meta name="image" content="img/banner_pxi-lab.png">
+
+  <meta itemprop="name" content="pxi.design">
+  <meta itemprop="description" content="home of pxi design laboratory">
+  <meta itemprop="image" content="img/banner_pxi-lab.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="pxi.design">
+  <meta name="twitter:description" content="home of pxi design laboratory">
+  <meta name="twitter:image:src" content="img/banner_pxi-lab.png">
+
+  <meta name="og:title" content="pxi.design">
+  <meta name="og:description" content="home of pxi design laboratory">
+  <meta name="og:type" content="website">
+  <meta name="og:image" content="img/banner_pxi-lab.png">
+  <meta name="og:url" content="https://pxi.design/">
+  <meta name="og:site_name" content="pxi.design">
+
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+
+  <!-- while in DEV, separate styling concerns into stylesheets -->
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body class="grid">
+  <header>
+    <a href="https://pxi.design/" aria-label="pxi-lab-homepage"><img id="pxi-logo" src="img/pxi-lab.svg"></a>
+    <div id="toggle--theme">
+      <button type="button" theme-toggle="light" aria-label="switch to light mode"><img src="img/light-button.svg" alt="light icon" theme-toggle="light"></button>
+      <button type="button" theme-toggle="dark" aria-label="switch to dark mode"><img src="img/dark-button.svg" alt="dark icon" theme-toggle="dark"></button>
+    </div>
+    <script type="text/javascript">
+      // toggle--theme (light/dark)
+      (function() {
+        var buttonsTheme = document.querySelectorAll('button[theme-toggle]');
+        for (var i = 0; i < buttonsTheme.length; i++) {
+
+          buttonsTheme[i].addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log("click");
+            document.querySelector('html').setAttribute(
+              'theme',
+              event.target.getAttribute('theme-toggle'));
+          },
+          false);
+        }
+      })();
+    </script>
+    <h1 style="font-size:var(--type-scale--1); font-weight:normal;">design laboratory</h1>
+    <hr>
+  </header>
+
+  <noscript class="warning">
+    <p><strong>sorry</strong> the theme switcher needs activate javascript to work. other than that you should be golden.</p>
+  </noscript>
+
+  <main class="flex-grid margin-top:0">
+    <div>
+      <h2>a selection of our projects</h2>
+      <ul>
+        <li><a href="https://slidenotes.io">slidenotes.io</a>: turn text (notes) into presentation slides.</li>
+        <li><a href="https://pipfy.pxi.design">pipfy</a>: put a floating window of your webcam or captions on your desktop.</li>
+        <li><a href="https://compad.pxi.design">compad</a>: a communication pad to integrate notifications with online meetings.</li>
+        <li><a style="font-weight:normal" href="https://agentur.pxi.gmbh"><code><strong>pxi</strong>|agentur</code></a>: strategy & design consultancy services (in german)</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <hr>
+    <section class="flex-grid" id="about">
+      <p>we're a small design lab and consultancy. we also make <a href="https://slidenotes.io" target="_blank">slidenotes.io</a>.
+        you can <a href="https://gumroad.com/l/compad-cards" target="_blank">buy us a coffee</a> to help our free open source projects. we'd be thrilled.
+      </p>
+      <form action="https://mail.pxi.gmbh/sendy/subscribe" method="POST" accept-charset="utf-8">
+        <label for="about--email" class="is-invisible">sign up for our newsletter</label>
+        <input type="email" name="email" id="about--email" required placeholder="your@email.com">
+        <button type="submit" name="submit">subscribe</button>
+        <br>
+        <div style="display:none;">
+        	<label for="hp">HP</label><br/>
+        	<input type="text" name="hp" id="hp"/>
+      	</div>
+        <label>
+          <input type="checkbox" name="gdpr" required id="gdpr">
+          i'd like lab notes from <code><strong>pxi</strong></code> sent to this email and i'm happy with
+        </label> <span><a href="#imprint" onclick="getElementById('imprint').setAttribute('open', true);">the terms</a></span>
+        <input type="hidden" name="list" value="K6XGJHWQ4XmVUsKM892EuIIw"/>
+      	<input type="hidden" name="subform" value="yes"/>
+      </form>
+    </section>
+
+    <details class="imprint" id="imprint">
+      <summary role="button" onclick="if(!this.parentElement.hasAttribute('open')){setTimeout(function(){window.scrollBy(0,150);},50);this.parentElement.setAttribute('aria-expanded','true')}else{this.parentElement.setAttribute('aria-expanded','false')}">
+        imprint & privacy policy
+      </summary>
+      <div class="flex-grid">
+        <div>
+          <p>
+            &copy; <span id="current-year"></span> &mdash;
+            <script>// show current year
+              document.getElementById("current-year").innerHTML = new Date().getUTCFullYear();
+            </script>
+            pixelcraft innovation GmbH
+            <br>Karl-Heine-Straße 99 | 04229 Leipzig
+            <br>GF Jakob Jochmann (ViSdP)
+            <br>HRB 29619 | Leipzig | UstID DE291272096
+            <br>+49 152 27094501 | <span aria-label="write us an email" class="js--email">lab [at] pxi.design</span>
+          </p>
+        </div>
+        <div>
+          <p>we practice consent based data sovereignty. no tracking, no nonsense. if you subscribe to our emails you can withdraw consent at any time. poof. see our detailed <a href="https://github.com/pxi-gmbh/pxi.design/blob/main/legal.md">terms & privacy notice</a></p>
+        </div>
+      </div>
+    </details>
+  </footer>
+</body>
+</html>

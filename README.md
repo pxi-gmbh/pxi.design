@@ -1,2 +1,3 @@
 # pxi.design
- public repository of the pxi.lab identity and policies
+
+public repository of the **pxi design laboratory** identity and policies
