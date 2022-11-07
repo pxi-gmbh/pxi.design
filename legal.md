@@ -12,7 +12,7 @@ TOC:
 
 ## general terms
 
-last updated: 2021-07-22
+last updated: 2022-10-07
 
 thank you for using our services. we try to come up with sensible rules to help you and everyone else make the best use of our work. "we" is the team working to create these services and, for legal purposes in this agreement, the company: **pixelcraft innovation GmbH**
 
@@ -102,4 +102,4 @@ according to EU law you have the right to inquire about the data we hold about y
 
 if you would like to inquire about use of your personal data or our policies, or if you want to revoke or alter previously submitted permissions please contact:
 
-Jakob Jochmann | Karl-Heine-Straße 99 | 04229 Leipzig | privacy [at] jakob.pxi.gmbh
+Jakob Jochmann | Peterssteinweg 14 | 04107 Leipzig | privacy [at] jakob.pxi.gmbh
